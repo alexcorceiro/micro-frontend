@@ -5,7 +5,10 @@ import mfConfig from './modulefederation.config';
 import rspack from '@rspack/core';
 export default defineConfig({
   server: {
-    port: 3001,
+    port: 3010,
+  },
+  source: {
+    preEntry: false,
   },
   performance: {
     chunkSplit: {

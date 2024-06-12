@@ -1,10 +1,11 @@
 const { dependencies } = require('./package.json');
 
 module.exports = {
-  name: 'remote',
+  name: 'shaders',
   exposes: {
     './Button': './src/Button',
-
+    './Header' : './src/components/Header.jsx',
+    './Footer' : './src/components/Footer.jsx'
   },
   filename: 'remoteEntry.js',
   shared: {
